@@ -1,3 +1,7 @@
 # Rtl8812au_Drivers_Installation_Script:
-Bash Script to automate the installation of Rtl8812au drivers on Kali Linux (2025.2)
-Install all necessary componments, then plug in your external wifi card and it will be fine...
+
+Bash Script to automate the installation of Rtl8812au drivers on Kali Linux (2025.2).
+
+The script install all the necessary componments in one time.
+
+Then plug in your external wifi card on usb and happy hacking...
