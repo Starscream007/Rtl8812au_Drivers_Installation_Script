@@ -2,9 +2,9 @@
 
 #Welcome to the rtl8812au drivers installation script by $tar$cream
 
-#Don't forget to enter chmod +x wifi.sh to use it.
+#Don't forget to enter chmod +x wifi.sh to make the script executable.
 
-#This linux header is for Kali, if you need another one please enter the command:'apt-cache search linux-headers' on our sytem, then select the first result and change it in the 'Installing Linux Header' section. 
+#This linux header is for Kali, if you need another one please enter the command:'apt-cache search linux-headers' on our sytem, then select the first result and change the header version.
 
 echo -e "\n[+] Hello, Welcome and let's get started shall we..."
 sleep 5 
@@ -22,6 +22,9 @@ sudo apt install -y realtek-rtl88xxau-dkms
 
 echo -e "\n=========Installing Linux header=============="
 echo "[+] Building all modules, be patient please.."
+
+#apt-cache search linux-headers
+#replace the Linux header version here if needed
 sudo apt install -y linux-headers-6.12.25-amd64 
 
 echo -e "\n===========Git cloning ein progress============"
@@ -41,9 +44,10 @@ sleep 5
 read input
 if [ "$input" == "e" ]; then
 echo -e "\n[+] Good bye and don't forget to do your reboot manually.."
-   exit
+   exit 0
 else 
    reboot
 fi
+
 
 
