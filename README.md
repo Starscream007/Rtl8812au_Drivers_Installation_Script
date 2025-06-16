@@ -6,6 +6,6 @@ The script install all the necessary componments, build modules and create files
 
 First plug in your adapter in usb and run the script.
 
-Once it's done enter the command <lsusb> to verify that your adapter is installed and recognize by your sytem.
+Once it's done enter the command "lsusb" in terminal to verify that your adapter is installed and recognize by your sytem.
 
 
